@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+      - index.qmd
+      - about.qmd
+      - 01_Gypsum/01_flow_tran_gypsum_c1.ipynb
+      - 01_Gypsum/02_flow_tran_gypsum_c2.ipynb
+
+website:
+  title: "RTWMA"
+  repo-url: https://github.com/luiggix/RTWMA
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/luiggix/RTWMA
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - 01_Gypsum/01_flow_tran_gypsum_c1.ipynb
+      - 01_Gypsum/02_flow_tran_gypsum_c2.ipynb
+
+  page-navigation: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    code-fold: true
+
+date: today
+date-format: iso
+
