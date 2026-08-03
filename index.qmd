@@ -1,9 +1,30 @@
 ---
 title: "RTWMA"
-subtitle: "Software for reactive transport based on WMA"
-author: "Luis M. de la Cruz, IGEF, UNAM"
+subtitle: "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno"
+author:
+    - name: "Luis Miguel De la Cruz Salas"
+      affiliation: "Instituto de Geofísica, UNAM"
+    - name: "Norberto Carmen Vera Guzmán"
+      affiliation: "Instituto de Geofísica, UNAM"
+    - name: "Graciela Herrera Zamarrón"
+      affiliation: "Instituto de Geofísica, UNAM"
+    - name: "Jesús Carrera Ramírez"
+      affiliation: "Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España."
+    - name: "Jordi Petchamé Guerrero"
+      affiliation: "Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España."
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Descripción.
+La contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud
+pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a
+través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones
+basadas en la naturaleza para la remoción *in situ* de especies de nitrógeno en aguas subterráneas,
+mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo
+se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los
+mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción
+mediante experimentación y modelación matemática, y desarrolla herramientas computacionales
+para la simulación del transporte reactivo en medios porosos. 
+
+En este repositorio se depositan todas las herramientas de software así como los ejemplos para la
+simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas ([WMA](https://doi.org/10.1016/j.advwatres.2022.104131) por sus siglas en inglés).

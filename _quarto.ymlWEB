@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
       - index.qmd
+      - about.qmd
       - 01_CT_gypsum_1D/01_C1_flow_tran.ipynb
       - 01_CT_gypsum_1D/02_C2_flow_tran.ipynb
       - 01_CT_gypsum_1D/03_U_flow_tran.ipynb
@@ -10,8 +11,6 @@ project:
       - 01_CT_gypsum_1D/05_Uexch_flow_tran.ipynb
       - 01_CT_gypsum_1D/06_Uexch_vis_flow_tran.ipynb
       - 01_CT_gypsum_1D/07_Analysis_Vis.ipynb
-
-lang: es
 
 website:
   title: "RTWMA"
@@ -21,6 +20,7 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - about.qmd
     right:
       - icon: github
         href: https://github.com/luiggix/RTWMA
@@ -42,8 +42,8 @@ website:
 format:
   html:
     theme:
-      light: [minty]
-      dark: [cyborg]
+      - cosmo
+      - brand
     css: styles.css
     toc: true
     code-fold: true

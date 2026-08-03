@@ -6,14 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Luis Miguel De la Cruz Salas">
-<meta name="author" content="Norberto Carmen Vera Guzmán">
-<meta name="author" content="Graciela Herrera Zamarrón">
-<meta name="author" content="Jesús Carrera Ramírez">
-<meta name="author" content="Jordi Petchamé Guerrero">
 <meta name="dcterms.date" content="2026-08-03">
 
-<title>RTWMA</title>
+<title>analysis_vis – RTWMA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,32 +21,67 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./01_CT_gypsum_1D/01_C1_flow_tran.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c30daae0ec498193b8721a0cf54719cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c30daae0ec498193b8721a0cf54719cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,7 +140,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -282,9 +312,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">RTWMA</span>
     </a>
   </div>
@@ -295,7 +325,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -317,7 +347,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">RTWMA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_CT_gypsum_1D/07_Analysis_Vis.html">07_Analysis_Vis.html</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -331,7 +361,7 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
+      <a href="../index.html" class="sidebar-logo-link">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -343,49 +373,49 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">RTWMA</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/01_C1_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/01_C1_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/02_C2_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/02_C2_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_2 = Ca^{2+}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/03_U_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/03_U_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/04_Uvis_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/04_Uvis_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visualización y análisis de resultados.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/05_Uexch_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/05_Uexch_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span> con intercambio.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visualización y análisis de resultados.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/07_Analysis_Vis.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/07_Analysis_Vis.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">07_Analysis_Vis.html</span></a>
   </div>
 </li>
@@ -394,14 +424,8 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#descripción." id="toc-descripción." class="nav-link active" data-scroll-target="#descripción.">Descripción.</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -409,60 +433,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RTWMA</h1>
-<p class="subtitle lead">Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno</p>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autores/as</div>
-  <div class="quarto-title-meta-heading">Afiliaciones</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Luis Miguel De la Cruz Salas </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Norberto Carmen Vera Guzmán </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Graciela Herrera Zamarrón </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Jesús Carrera Ramírez </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Jordi Petchamé Guerrero </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
@@ -478,13 +455,121 @@ window.Quarto = {
 </header>
 
 
-<section id="descripción." class="level1">
-<h1>Descripción.</h1>
-<p>La contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción <em>in situ</em> de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.</p>
-<p>En este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (<a href="https://doi.org/10.1016/j.advwatres.2022.104131">WMA</a> por sus siglas en inglés).</p>
+<div id="99532350-1d21-4f33-b8bc-fe76aba00ccf" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> flopy</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="c7636dbd-7d98-41de-bc2e-e1269ab5d394" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>nlay <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nrow <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>ncol <span class="op">=</span> <span class="dv">30</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Arreglo para la condición inicial</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>c1_ini <span class="op">=</span> np.full((nlay,nrow,ncol), <span class="fl">1.0000329</span>) <span class="co"># En todo el dominio</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>c1_ini[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">11</span>] <span class="op">=</span> <span class="fl">200.0</span>  <span class="co"># Pulso en x_L</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Arreglo para la condición inicial</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>c2_ini <span class="op">=</span> np.full((nlay,nrow,ncol), <span class="fl">3.294e-5</span>) <span class="co"># En todo el dominio</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>c2_ini[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">11</span>] <span class="op">=</span> <span class="fl">1.647e-7</span>  <span class="co"># Pulso en x_L</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c1_ini)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(c2_ini)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[[  1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+     1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+     1.0000329 200.          1.0000329   1.0000329   1.0000329
+     1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+     1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+     1.0000329   1.0000329   1.0000329   1.0000329   1.0000329]]]
+[[[3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05
+   3.294e-05 3.294e-05 3.294e-05 3.294e-05 1.647e-07 3.294e-05 3.294e-05
+   3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05
+   3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05 3.294e-05
+   3.294e-05 3.294e-05]]]</code></pre>
+</div>
+</div>
+<div id="01cd87b9-b515-4eff-a868-2a5fcb748536" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos los modelos de transporte</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>o_sim1 <span class="op">=</span> flopy.mf6.MFSimulation.load(sim_ws<span class="op">=</span><span class="st">"io_mf6/c1/gwt"</span>, verbosity_level<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>o_sim2 <span class="op">=</span> flopy.mf6.MFSimulation.load(sim_ws<span class="op">=</span><span class="st">"io_mf6/c2/gwt"</span>, verbosity_level<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtenemos los objetos de los modelos</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>o_gwt1 <span class="op">=</span> o_sim1.get_model(<span class="st">"transport"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>o_gwt2 <span class="op">=</span> o_sim2.get_model(<span class="st">"transport"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Recuperamos las coordenadas del dominio</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> o_gwt1.modelgrid</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> grid.xcellcenters[<span class="dv">0</span>] <span class="co"># centros de los volúmenes</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Recuperamos la concentración c1</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>c1_obj <span class="op">=</span> o_gwt1.output.concentration()</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>c1 <span class="op">=</span> c1_obj.get_data()[<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>times1 <span class="op">=</span> np.asarray(c1_obj.get_times())</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>c1 <span class="op">=</span> np.empty((<span class="bu">len</span>(times1)<span class="op">+</span><span class="dv">1</span>, <span class="bu">len</span>(x)), dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>c1[<span class="dv">0</span>] <span class="op">=</span> c1_ini[<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(times1):</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    c1[i<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> c1_obj.get_data(totim <span class="op">=</span> t)[<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Recuperamos la concentración c2</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>c2_obj <span class="op">=</span> o_gwt2.output.concentration()</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>c2 <span class="op">=</span> c2_obj.get_data()[<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>times2 <span class="op">=</span> np.asarray(c2_obj.get_times())</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>c2 <span class="op">=</span> np.empty((<span class="bu">len</span>(times2)<span class="op">+</span><span class="dv">1</span>, <span class="bu">len</span>(x)), dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>c2[<span class="dv">0</span>] <span class="op">=</span> c2_ini[<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, t <span class="kw">in</span> <span class="bu">enumerate</span>(times2):</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    c2[i<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> c2_obj.get_data(totim <span class="op">=</span> t)[<span class="dv">0</span>,<span class="dv">0</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="c0731156-bc91-4745-b1c5-191072528c37" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(x, c1[<span class="dv">0</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'C1'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(x, c2[<span class="dv">0</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'C2'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nt, t <span class="kw">in</span> <span class="bu">enumerate</span>(times1):</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>].plot(x, c1[nt], lw<span class="op">=</span><span class="fl">.5</span>, color<span class="op">=</span><span class="st">'silver'</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>].plot(x, c2[nt], lw<span class="op">=</span><span class="fl">.5</span>, color<span class="op">=</span><span class="st">'silver'</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(x, c1[<span class="dv">10</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'black'</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>          marker <span class="op">=</span> <span class="st">"o"</span>, markersize<span class="op">=</span><span class="st">"4"</span>, alpha <span class="op">=</span> <span class="fl">0.75</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(x, c2[<span class="dv">10</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'black'</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>          marker <span class="op">=</span> <span class="st">"o"</span>, markersize<span class="op">=</span><span class="st">"4"</span>, alpha <span class="op">=</span> <span class="fl">0.75</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(x, c1[<span class="op">-</span><span class="dv">1</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'orangered'</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(x, c2[<span class="op">-</span><span class="dv">1</span>], lw<span class="op">=</span><span class="fl">1.5</span>, ls <span class="op">=</span> <span class="st">"-"</span>, color<span class="op">=</span><span class="st">'darkgreen'</span>)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="ss">f"$c_1$"</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="ss">f"$c_2$"</span>)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].grid()</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].grid()</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="07_Analysis_Vis_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -902,11 +987,11 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" class="pagination-link" aria-label="Visualización y análisis de resultados.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Visualización y análisis de resultados.</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01_CT_gypsum_1D/01_C1_flow_tran.html" class="pagination-link" aria-label="Flujo y transporte conservativo de la especie $c_1= SO_4^{2-}$.">
-        <span class="nav-page-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -6,14 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Luis Miguel De la Cruz Salas">
-<meta name="author" content="Norberto Carmen Vera Guzmán">
-<meta name="author" content="Graciela Herrera Zamarrón">
-<meta name="author" content="Jesús Carrera Ramírez">
-<meta name="author" content="Jordi Petchamé Guerrero">
 <meta name="dcterms.date" content="2026-08-03">
 
-<title>RTWMA</title>
+<title>Visualización y análisis de resultados. – RTWMA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,32 +21,68 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./01_CT_gypsum_1D/01_C1_flow_tran.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c30daae0ec498193b8721a0cf54719cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../01_CT_gypsum_1D/05_Uexch_flow_tran.html" rel="next">
+<link href="../01_CT_gypsum_1D/03_U_flow_tran.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c30daae0ec498193b8721a0cf54719cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-758489e0191452486a0f2e35ad01d01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,7 +141,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -282,9 +313,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">RTWMA</span>
     </a>
   </div>
@@ -295,7 +326,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -317,7 +348,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">RTWMA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_CT_gypsum_1D/04_Uvis_flow_tran.html">Visualización y análisis de resultados.</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -331,7 +362,7 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
+      <a href="../index.html" class="sidebar-logo-link">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -343,49 +374,49 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">RTWMA</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/01_C1_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/01_C1_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/02_C2_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/02_C2_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_2 = Ca^{2+}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/03_U_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/03_U_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/04_Uvis_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/04_Uvis_flow_tran.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Visualización y análisis de resultados.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/05_Uexch_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/05_Uexch_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span> con intercambio.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/06_Uexch_vis_flow_tran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visualización y análisis de resultados.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_CT_gypsum_1D/07_Analysis_Vis.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_CT_gypsum_1D/07_Analysis_Vis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">07_Analysis_Vis.html</span></a>
   </div>
 </li>
@@ -399,7 +430,7 @@ window.Quarto = {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#descripción." id="toc-descripción." class="nav-link active" data-scroll-target="#descripción.">Descripción.</a></li>
+  <li><a href="#recuperación-de-la-información." id="toc-recuperación-de-la-información." class="nav-link active" data-scroll-target="#recuperación-de-la-información.">Recuperación de la información.</a></li>
   </ul>
 </nav>
     </div>
@@ -409,60 +440,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RTWMA</h1>
-<p class="subtitle lead">Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno</p>
+<h1 class="title">Visualización y análisis de resultados.</h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autores/as</div>
-  <div class="quarto-title-meta-heading">Afiliaciones</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Luis Miguel De la Cruz Salas </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Norberto Carmen Vera Guzmán </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Graciela Herrera Zamarrón </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Geofísica, UNAM
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Jesús Carrera Ramírez </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Jordi Petchamé Guerrero </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
@@ -478,10 +463,158 @@ window.Quarto = {
 </header>
 
 
-<section id="descripción." class="level1">
-<h1>Descripción.</h1>
-<p>La contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción <em>in situ</em> de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.</p>
-<p>En este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (<a href="https://doi.org/10.1016/j.advwatres.2022.104131">WMA</a> por sus siglas en inglés).</p>
+<p><strong>Descripción</strong>.</p>
+<p>En esta notebook se recupera la información de la simulación de flujo de agua subterránea y transporte conservativo de la componente <span class="math inline">\(U = c_1 - c_2\)</span>, donde <span class="math inline">\(c_1= SO_4^{2-}\)</span> y <span class="math inline">\(c_2 =  Ca^{2+}\)</span>. Una vez recuperada la información, se visualiza usando las funciones implementadas en el archivo <a href="vis.py"><code>vis.py</code></a>.</p>
+<p><a href="https://github.com/luiggix/RTWMA">RTWMA</a> © 2024-2026 by <a href="https://www.geofisica.unam.mx">IGF-UNAM</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+<section id="recuperación-de-la-información." class="level1">
+<h1>Recuperación de la información.</h1>
+<p>Usamos la función <code>data_recovery()</code> del módulo <a href="src_gypsum/vis.py"><strong>src_gypsum/vis.py</strong></a> para recuperar la información de los cálculos. Esta función requiere de los objetos de los modelos de flujo y transporte, los cuales se pueden crear a partir de los archivos de resultados como sigue.</p>
+<div id="2f605268-f216-4a4e-852d-168770aae945" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src_gypsum <span class="im">import</span> vis</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> flopy</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="1da06094-b2f0-43e8-9012-a24a875ac747" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Usamos LaTeX para los tectos de la figura.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>plt.rcParams.update({</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"text.usetex"</span>: <span class="va">True</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"font.family"</span>: <span class="st">"serif"</span>,  <span class="co"># Uses standard Computer Modern font</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"font.serif"</span>: [<span class="st">"Computer Modern Roman"</span>],</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="3e45379b-fb2b-4edf-8784-30be2a9f9f59" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos el modelo de flujo</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>o_sim_f <span class="op">=</span> flopy.mf6.MFSimulation.load(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    sim_ws<span class="op">=</span><span class="st">"io_mf6/U/gwf"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    verbosity_level<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos el modelo de transporte</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>o_sim_t <span class="op">=</span> flopy.mf6.MFSimulation.load(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    sim_ws<span class="op">=</span><span class="st">"io_mf6/U/gwt"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    verbosity_level<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtenemos los objetos de cada modelo</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>o_gwf <span class="op">=</span> o_sim_f.get_model(<span class="st">"flow"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>o_gwt <span class="op">=</span> o_sim_t.get_model(<span class="st">"transport"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<p>Ahora recuperamos la información a partir de los objetos <code>o_gwf</code> y <code>o_gwt</code>:</p>
+<div id="7518cd79-9bd1-4ab2-9a51-5402e06d256a" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x, head, qx, qy, o_conc, times_c <span class="op">=</span> vis.data_recovery(o_gwf, o_gwt)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-blue-fg">
+
+Carga hidráulica
+
+――――――――――――――――</span>
+
+ xcoord = <span class="ansi-blue-fg">―― data array ――</span>
+
+        = [ 0.5  1.5  2.5  3.5  4.5  5.5  6.5  7.5  8.5  9.5 10.5 11.5 12.5 13.5
+
+ 14.5 15.5 16.5 17.5 18.5 19.5 20.5 21.5 22.5 23.5 24.5 25.5 26.5 27.5
+
+ 28.5 29.5]
+
+times_h = <span class="ansi-blue-fg">―― data array ――</span>
+
+        = [40.]
+
+   head = <span class="ansi-blue-fg">―― data array ――</span>
+
+        = [6.8 6.6 6.4 6.2 6.  5.8 5.6 5.4 5.2 5.  4.8 4.6 4.4 4.2 4.  3.8 3.6 3.4
+
+ 3.2 3.  2.8 2.6 2.4 2.2 2.  1.8 1.6 1.4 1.2 1. ]
+
+     qx = <span class="ansi-blue-fg">―― data array ――</span>
+
+        = [[0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2
+
+  0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2]]
+
+<span class="ansi-blue-fg">――――――――――――――――</span>
+
+<span class="ansi-blue-fg">
+
+Concentración
+
+―――――――――――――</span>
+
+xcoord = <span class="ansi-blue-fg">―― data array ――</span>
+
+       = [ 0.5  1.5  2.5  3.5  4.5  5.5  6.5  7.5  8.5  9.5 10.5 11.5 12.5 13.5
+
+ 14.5 15.5 16.5 17.5 18.5 19.5 20.5 21.5 22.5 23.5 24.5 25.5 26.5 27.5
+
+ 28.5 29.5]
+
+ times = <span class="ansi-blue-fg">―― data array ――</span>
+
+       = [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15. 16. 17. 18.
+
+ 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36.
+
+ 37. 38. 39. 40.]
+
+  conc = <span class="ansi-blue-fg">―― data array ――</span>
+
+       = [ 0.99999996  0.99999996  0.99999996  0.99999996  0.99999998  1.00000008
+
+  1.00000057  1.00000301  1.00001428  1.00006304  1.00025941  1.00099255
+
+  1.00351912  1.0115223   1.03473175  1.09613338  1.24384413  1.56602577
+
+  2.20143517  3.3312982   5.13656916  7.71607621 10.98837252 14.6238616
+
+ 18.07045448 20.64607289 21.65819335 21.39312529 20.1748076  17.1500158 ]
+
+<span class="ansi-blue-fg">―――――――――――――</span>
+</pre>
+</div>
+</div>
+</div>
+<p>Realizamos la graficación con la función <code>vis.plot()</code>:</p>
+<div id="dc98c4ce-caf9-41d7-b802-0e37a8b3ec97" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>vis.plot(o_gwf, x, head, qx, qy, o_conc, times_c)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04_Uvis_flow_tran_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Graficamos como función del tiempo en las celdas de observación (5, 11, 12, 30) usando la función <code>vis.plot_obs()</code>:</p>
+<div id="280dee1e-a038-4ee3-affa-b29f9cfd79e4" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vis.plot_obs(o_conc, times_c)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04_Uvis_flow_tran_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -902,10 +1035,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../01_CT_gypsum_1D/03_U_flow_tran.html" class="pagination-link" aria-label="Flujo y transporte conservativo de la componente $U = SO_4^{2-} - Ca^{2+}$.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span>.</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01_CT_gypsum_1D/01_C1_flow_tran.html" class="pagination-link" aria-label="Flujo y transporte conservativo de la especie $c_1= SO_4^{2-}$.">
-        <span class="nav-page-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../01_CT_gypsum_1D/05_Uexch_flow_tran.html" class="pagination-link" aria-label="Flujo y transporte conservativo de la componente $U = SO_4^{2-} - Ca^{2+}$ con intercambio.">
+        <span class="nav-page-text">Flujo y transporte conservativo de la componente <span class="math inline">\(U = SO_4^{2-} - Ca^{2+}\)</span> con intercambio.</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
