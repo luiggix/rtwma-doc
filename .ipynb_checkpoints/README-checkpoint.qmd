@@ -1,18 +1,4 @@
----
-title: "RTWMA"
-subtitle: "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)"
-#author:
-#    - name: "Luis Miguel De la Cruz Salas"
-#      affiliation: "Instituto de Geofísica, UNAM"
-#    - name: "Norberto Carmen Vera Guzmán"
-#      affiliation: "Instituto de Geofísica, UNAM"
-#    - name: "Graciela Herrera Zamarrón"
-#      affiliation: "Instituto de Geofísica, UNAM"
-#    - name: "Jesús Carrera Ramírez"
-#      affiliation: "Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España."
-#    - name: "Jordi Petchamé Guerrero"
-#      affiliation: "Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España."
----
+# Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)
 
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/release/python-3130/)
 [![NumPy Badge](https://img.shields.io/badge/numpy-2.4.6-013243?logo=numpy&logoColor=white)](https://numpy.org/devdocs/release/2.4.6-notes.html)

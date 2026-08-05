@@ -264,15 +264,39 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "RTWMA",
+    "objectID": "README.html",
+    "href": "README.html",
+    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
     "section": "",
-    "text": "Descripción.\nLa contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés).",
-    "crumbs": [
-      "Home",
-      "RTWMA"
-    ]
+    "text": "Responsable.\n\nDra. Graciela Herrera Zamarrón, IGEF-UNAM.\n\n\n\nLa contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés)."
+  },
+  {
+    "objectID": "README.html#descripción.",
+    "href": "README.html#descripción.",
+    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "section": "",
+    "text": "La contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés)."
+  },
+  {
+    "objectID": "README.html#colaboradores-académicos",
+    "href": "README.html#colaboradores-académicos",
+    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "section": "Colaboradores académicos",
+    "text": "Colaboradores académicos\n\nDr. Jesús Carrera Ramírez, IDAEA-CSIC\nDr. Iván Contreras Trejo, IGF-UNAM\nDr. Guillermo de Jesús Hernández García, IGF-UNAM\nDr. Mario Hernández Hernández, IGF-UNAM\nDr. Eric Morales Casique, IGl-UNAM\nDr. Leonardo Teja Juárez, FI-UNAM\nDr. Norberto Carmen Vera Guzmán, IGF-UNAM"
+  },
+  {
+    "objectID": "README.html#estudiantes.",
+    "href": "README.html#estudiantes.",
+    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "section": "Estudiantes.",
+    "text": "Estudiantes.\n\nJordi Petchamé Guerrero, Doctorado en Ingeniería del Terreno, Multiscale Characterization Of GroUndwater and Solutes discharge into The Ocean (MuchoGusto), Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.\nJosé Armando Torres López, Maestría en Ingeniería Exploración y Explotación de Recursos Naturales, Programa de Maestría y Doctorado en Ingeniería, UNAM."
+  },
+  {
+    "objectID": "README.html#estructura-del-repositorio.",
+    "href": "README.html#estructura-del-repositorio.",
+    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "section": "Estructura del repositorio.",
+    "text": "Estructura del repositorio.\nEl repositorio ha sido configurado usando la herramienta uv la cual permite configurar y reproducir el ambiente del proyecto de una manera fácil y eficiente. El desarrollo de los ejemplos se basa en MODFLOW 6, FloPy y códigos propios desarrollados en Python y Fortran. La estructura de directorios del repositorio es como sigue:\n\nbenchmarks. Contiene ejemplos desarrollados por todo el grupo de trabajo.\nbin. Contiene los ejecutables de MODFLOW 6 para diferentes sistemas operativos.\n\nlinux. Sistema operativo Linux.\nmacos. Sistema operativo MacOS, procesador Intel.\nmacosarm. Sistema operativo MacOS, procesador ARM64.\nwindows. Sistema operativo Windows 64 bits.\ndoc. Documentación de MODFLOW 6.\n\nsrc. Fuentes de código común para todos los ejemplos.\nREADME.md. Este archivo.\nLICENSE.txt. Licencia de uso del software.\npyproject.toml. Archivo de configuración del proyecto.\nuv.sync. Archivo para reproducir el ambiente del proyecto en una computadora local.\n\nLos ejemplos desarrollados se encuentran en la carpeta benchmarks. Se ha definido una notación para los nombres de las subcarpetas y de los archivos de los ejemplos, la cual permite identificar de que se trata cada ejemplo, y se describe en la Tabla 1.\nTabla 1. Descripción de la notación de los nombres de archivos.\n\n\n\n\n\n\n\nCadena\nDescripción\n\n\n\n\nCT\nEjemplo de transporte conservativo (Conservative Transport)\n\n\nRT\nEjemplo de transporte reactivo (Reactive Transport)\n\n\nWMA\nEjemplo de transporte reactivo resuelto con el enfoque de mezcla de aguas.\n\n\nCOM\nEjemplo de transporte reactivo resuelto con el enfoque de componentes.\n\n\nGWF\nEjemplo de flujo resuelto con GWF de MODFLOW 6.\n\n\nGWT\nEjemplo de transporte resuelto con GWT de MODFLOW 6.\n\n\nEXCH\nEjemplo de flujo y transporte que utiliza un intercambio GWFGWT de MODFLOW 6.\n\n\nAPI\nEjemplo que utiliza la API de MODFLOW 6.\n\n\nDFC\nEjemplos que resuelve flujo y/o transporte usando un software basado en Diferencias Finitas Centrales escrito en Python.\n\n\n\n\nDescripción de los ejemplos.\nEn la carpeta benchmarks se tiene la siguiente estructura de archivos:\n\nfigures. Figuras compartidas por todos los ejemplos.\nDesciption.md. Descripción corta de cada ejemplo.\nenv.json. Configuración de variables de ambiente locales.\n00_RT_EXE. Archivos ejecutables para realizar la simulación de transporte reactivo con el enfoque de mezclas y con el enfoque de componentes.\n\nLos carpetas 01_… en adelante contienen cada una de ellas un ejemplo. Dentro de estas carpetas se tiene también una estructura que permite organizar el código de una manera clara. Esta estructura se describe en la tabla 2.\nTabla 2. Descripción de las subcarpetas de cada ejemplo.\n\n\n\n\n\n\n\nSubcarpeta\nDescripción\n\n\n\n\nio_mf6\nArchivos de entrada y salida de MODFLOW 6.\n\n\nnr_analysis\nArchivos de resultados para un análisis posterior y visualización.\n\n\nrt_workingDir\nDirectorio de trabajo para la simulación de transporte reactivo. Contiene entre otras cosas bases de datos químicas, archivos de entrada y de salida.\n\n\nsrc_\nCódigos en Python (.py) que permiten separar la implementación en módulos para una mejor organización. El nombre se completa con una palabra del ejemplo en cuestión (p ej. src_gypsum).\n\n\n\nNota. Los ejemplos pueden contener las cuatro carpetas mencionadas en la tabla 2 o un subconjunto de ellas, dependiendo de las necesidades de cada ejemplo.\nLos ejemplos dentro de cada carpeta se organizan en jupyter notebooks (.ipynb) o archivos de Python (.py) que se ejecutan en línea de comandos."
   },
   {
     "objectID": "01_CT_gypsum_1D/02_C2_flow_tran.html",
@@ -363,38 +387,58 @@
     ]
   },
   {
-    "objectID": "README.html",
-    "href": "README.html",
-    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RTWMA",
     "section": "",
-    "text": "Responsable.\n\nDra. Graciela Herrera Zamarrón, IGEF-UNAM.\n\n\n\nLa contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés)."
+    "text": "Responsable.",
+    "crumbs": [
+      "Home",
+      "RTWMA"
+    ]
   },
   {
-    "objectID": "README.html#descripción.",
-    "href": "README.html#descripción.",
-    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
-    "section": "",
-    "text": "La contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés)."
+    "objectID": "index.html#descripción.",
+    "href": "index.html#descripción.",
+    "title": "RTWMA",
+    "section": "Descripción.",
+    "text": "Descripción.\nLa contaminación de acuíferos por nitrato y amonio constituye un problema ambiental y de salud pública de alta relevancia en México y a escala global. Este proyecto, financiado por la SECIHTI a través del programa Ciencia de Frontera (CF-2023-G-904), tiene como objetivo desarrollar soluciones basadas en la naturaleza para la remoción in situ de especies de nitrógeno en aguas subterráneas, mediante el aprovechamiento de procesos hidrogeoquímicos naturales. Para alcanzar este objetivo se conformó un equipo interdisciplinario e interinstitucional de carácter binacional que investiga los mecanismos de transformación del amonio y nitrato en el subsuelo, evalúa métodos de remoción mediante experimentación y modelación matemática, y desarrolla herramientas computacionales para la simulación del transporte reactivo en medios porosos.\nEn este repositorio se depositan todas las herramientas de software así como los ejemplos para la simulación de la remoción de nitrato y amonio en diferentes sistemas acuíferos de interés. Los ejemplos de transporte reacivo se desarrollan usando el enfoque de mezcla de aguas (WMA por sus siglas en inglés).",
+    "crumbs": [
+      "Home",
+      "RTWMA"
+    ]
   },
   {
-    "objectID": "README.html#colaboradores-académicos",
-    "href": "README.html#colaboradores-académicos",
-    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "objectID": "index.html#colaboradores-académicos",
+    "href": "index.html#colaboradores-académicos",
+    "title": "RTWMA",
     "section": "Colaboradores académicos",
-    "text": "Colaboradores académicos\n\nDr. Jesús Carrera Ramírez, IDAEA-CSIC\nDr. Iván Contreras Trejo, IGF-UNAM\nDr. Guillermo de Jesús Hernández García, IGF-UNAM\nDr. Mario Hernández Hernández, IGF-UNAM\nDr. Eric Morales Casique, IGl-UNAM\nDr. Leonardo Teja Juárez, FI-UNAM\nDr. Norberto Carmen Vera Guzmán, IGF-UNAM"
+    "text": "Colaboradores académicos\n\nDr. Jesús Carrera Ramírez, IDAEA-CSIC\nDr. Iván Contreras Trejo, IGF-UNAM\nDr. Guillermo de Jesús Hernández García, IGF-UNAM\nDr. Mario Hernández Hernández, IGF-UNAM\nDr. Eric Morales Casique, IGl-UNAM\nDr. Leonardo Teja Juárez, FI-UNAM\nDr. Norberto Carmen Vera Guzmán, IGF-UNAM",
+    "crumbs": [
+      "Home",
+      "RTWMA"
+    ]
   },
   {
-    "objectID": "README.html#estudiantes.",
-    "href": "README.html#estudiantes.",
-    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "objectID": "index.html#estudiantes.",
+    "href": "index.html#estudiantes.",
+    "title": "RTWMA",
     "section": "Estudiantes.",
-    "text": "Estudiantes.\n\nJordi Petchamé Guerrero, Doctorado en Ingeniería del Terreno, Multiscale Characterization Of GroUndwater and Solutes discharge into The Ocean (MuchoGusto), Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.\nJosé Armando Torres López, Maestría en Ingeniería Exploración y Explotación de Recursos Naturales, Programa de Maestría y Doctorado en Ingeniería, UNAM."
+    "text": "Estudiantes.\n\nJordi Petchamé Guerrero, Doctorado en Ingeniería del Terreno, Multiscale Characterization Of GroUndwater and Solutes discharge into The Ocean (MuchoGusto), Instituto de Diagnóstico Ambiental y Estudios del Agua (IDAEA-CSIC), España.\nJosé Armando Torres López, Maestría en Ingeniería Exploración y Explotación de Recursos Naturales, Programa de Maestría y Doctorado en Ingeniería, UNAM.",
+    "crumbs": [
+      "Home",
+      "RTWMA"
+    ]
   },
   {
-    "objectID": "README.html#estructura-del-repositorio.",
-    "href": "README.html#estructura-del-repositorio.",
-    "title": "Soluciones basadas en la naturaleza a la contaminación del agua subterránea por especies de nitrógeno (SECIHTI: CF-2023-G-904)",
+    "objectID": "index.html#estructura-del-repositorio.",
+    "href": "index.html#estructura-del-repositorio.",
+    "title": "RTWMA",
     "section": "Estructura del repositorio.",
-    "text": "Estructura del repositorio.\nEl repositorio ha sido configurado usando la herramienta uv la cual permite configurar y reproducir el ambiente del proyecto de una manera fácil y eficiente. El desarrollo de los ejemplos se basa en MODFLOW 6, FloPy y códigos propios desarrollados en Python y Fortran. La estructura de directorios del repositorio es como sigue:\n\nbenchmarks. Contiene ejemplos desarrollados por todo el grupo de trabajo.\nbin. Contiene los ejecutables de MODFLOW 6 para diferentes sistemas operativos.\n\nlinux. Sistema operativo Linux.\nmacos. Sistema operativo MacOS, procesador Intel.\nmacosarm. Sistema operativo MacOS, procesador ARM64.\nwindows. Sistema operativo Windows 64 bits.\ndoc. Documentación de MODFLOW 6.\n\nsrc. Fuentes de código común para todos los ejemplos.\nREADME.md. Este archivo.\nLICENSE.txt. Licencia de uso del software.\npyproject.toml. Archivo de configuración del proyecto.\nuv.sync. Archivo para reproducir el ambiente del proyecto en una computadora local.\n\nLos ejemplos desarrollados se encuentran en la carpeta benchmarks. Se ha definido una notación para los nombres de las subcarpetas y de los archivos de los ejemplos, la cual permite identificar de que se trata cada ejemplo, y se describe en la Tabla 1.\nTabla 1. Descripción de la notación de los nombres de archivos.\n\n\n\n\n\n\n\nCadena\nDescripción\n\n\n\n\nCT\nEjemplo de transporte conservativo (Conservative Transport)\n\n\nRT\nEjemplo de transporte reactivo (Reactive Transport)\n\n\nWMA\nEjemplo de transporte reactivo resuelto con el enfoque de mezcla de aguas.\n\n\nCOM\nEjemplo de transporte reactivo resuelto con el enfoque de componentes.\n\n\nGWF\nEjemplo de flujo resuelto con GWF de MODFLOW 6.\n\n\nGWT\nEjemplo de transporte resuelto con GWT de MODFLOW 6.\n\n\nEXCH\nEjemplo de flujo y transporte que utiliza un intercambio GWFGWT de MODFLOW 6.\n\n\nAPI\nEjemplo que utiliza la API de MODFLOW 6.\n\n\nDFC\nEjemplos que resuelve flujo y/o transporte usando un software basado en Diferencias Finitas Centrales escrito en Python.\n\n\n\n\nDescripción de los ejemplos.\nEn la carpeta benchmarks se tiene la siguiente estructura de archivos:\n\nfigures. Figuras compartidas por todos los ejemplos.\nDesciption.md. Descripción corta de cada ejemplo.\nenv.json. Configuración de variables de ambiente locales.\n00_RT_EXE. Archivos ejecutables para realizar la simulación de transporte reactivo con el enfoque de mezclas y con el enfoque de componentes.\n\nLos carpetas 01_… en adelante contienen cada una de ellas un ejemplo. Dentro de estas carpetas se tiene también una estructura que permite organizar el código de una manera clara. Esta estructura se describe en la tabla 2.\nTabla 2. Descripción de las subcarpetas de cada ejemplo.\n\n\n\n\n\n\n\nSubcarpeta\nDescripción\n\n\n\n\nio_mf6\nArchivos de entrada y salida de MODFLOW 6.\n\n\nnr_analysis\nArchivos de resultados para un análisis posterior y visualización.\n\n\nrt_workingDir\nDirectorio de trabajo para la simulación de transporte reactivo. Contiene entre otras cosas bases de datos químicas, archivos de entrada y de salida.\n\n\nsrc_\nCódigos en Python (.py) que permiten separar la implementación en módulos para una mejor organización. El nombre se completa con una palabra del ejemplo en cuestión (p ej. src_gypsum).\n\n\n\nNota. Los ejemplos pueden contener las cuatro carpetas mencionadas en la tabla 2 o un subconjunto de ellas, dependiendo de las necesidades de cada ejemplo.\nLos ejemplos dentro de cada carpeta se organizan en jupyter notebooks (.ipynb) o archivos de Python (.py) que se ejecutan en línea de comandos."
+    "text": "Estructura del repositorio.\nEl repositorio ha sido configurado usando la herramienta uv la cual permite configurar y reproducir el ambiente del proyecto de una manera fácil y eficiente. El desarrollo de los ejemplos se basa en MODFLOW 6, FloPy y códigos propios desarrollados en Python y Fortran. La estructura de directorios del repositorio es como sigue:\n\nbenchmarks. Contiene ejemplos desarrollados por todo el grupo de trabajo.\nbin. Contiene los ejecutables de MODFLOW 6 para diferentes sistemas operativos.\n\nlinux. Sistema operativo Linux.\nmacos. Sistema operativo MacOS, procesador Intel.\nmacosarm. Sistema operativo MacOS, procesador ARM64.\nwindows. Sistema operativo Windows 64 bits.\ndoc. Documentación de MODFLOW 6.\n\nsrc. Fuentes de código común para todos los ejemplos.\nREADME.md. Este archivo.\nLICENSE.txt. Licencia de uso del software.\npyproject.toml. Archivo de configuración del proyecto.\nuv.sync. Archivo para reproducir el ambiente del proyecto en una computadora local.\n\nLos ejemplos desarrollados se encuentran en la carpeta benchmarks. Se ha definido una notación para los nombres de las subcarpetas y de los archivos de los ejemplos, la cual permite identificar de que se trata cada ejemplo, y se describe en la Tabla 1.\nTabla 1. Descripción de la notación de los nombres de archivos.\n\n\n\n\n\n\n\nCadena\nDescripción\n\n\n\n\nCT\nEjemplo de transporte conservativo (Conservative Transport)\n\n\nRT\nEjemplo de transporte reactivo (Reactive Transport)\n\n\nWMA\nEjemplo de transporte reactivo resuelto con el enfoque de mezcla de aguas.\n\n\nCOM\nEjemplo de transporte reactivo resuelto con el enfoque de componentes.\n\n\nGWF\nEjemplo de flujo resuelto con GWF de MODFLOW 6.\n\n\nGWT\nEjemplo de transporte resuelto con GWT de MODFLOW 6.\n\n\nEXCH\nEjemplo de flujo y transporte que utiliza un intercambio GWFGWT de MODFLOW 6.\n\n\nAPI\nEjemplo que utiliza la API de MODFLOW 6.\n\n\nDFC\nEjemplos que resuelve flujo y/o transporte usando un software basado en Diferencias Finitas Centrales escrito en Python.\n\n\n\n\nDescripción de los ejemplos.\nEn la carpeta benchmarks se tiene la siguiente estructura de archivos:\n\nfigures. Figuras compartidas por todos los ejemplos.\nDesciption.md. Descripción corta de cada ejemplo.\nenv.json. Configuración de variables de ambiente locales.\n00_RT_EXE. Archivos ejecutables para realizar la simulación de transporte reactivo con el enfoque de mezclas y con el enfoque de componentes.\n\nLos carpetas 01_… en adelante contienen cada una de ellas un ejemplo. Dentro de estas carpetas se tiene también una estructura que permite organizar el código de una manera clara. Esta estructura se describe en la tabla 2.\nTabla 2. Descripción de las subcarpetas de cada ejemplo.\n\n\n\n\n\n\n\nSubcarpeta\nDescripción\n\n\n\n\nio_mf6\nArchivos de entrada y salida de MODFLOW 6.\n\n\nnr_analysis\nArchivos de resultados para un análisis posterior y visualización.\n\n\nrt_workingDir\nDirectorio de trabajo para la simulación de transporte reactivo. Contiene entre otras cosas bases de datos químicas, archivos de entrada y de salida.\n\n\nsrc_\nCódigos en Python (.py) que permiten separar la implementación en módulos para una mejor organización. El nombre se completa con una palabra del ejemplo en cuestión (p ej. src_gypsum).\n\n\n\nNota. Los ejemplos pueden contener las cuatro carpetas mencionadas en la tabla 2 o un subconjunto de ellas, dependiendo de las necesidades de cada ejemplo.\nLos ejemplos dentro de cada carpeta se organizan en jupyter notebooks (.ipynb) o archivos de Python (.py) que se ejecutan en línea de comandos.",
+    "crumbs": [
+      "Home",
+      "RTWMA"
+    ]
   }
 ]
