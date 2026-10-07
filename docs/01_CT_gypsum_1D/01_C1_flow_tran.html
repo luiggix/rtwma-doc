@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-04">
+<meta name="dcterms.date" content="2026-10-07">
 
-<title>Flujo y transporte conservativo de la especie c_1= SO_4^{2-}. – RTWMA</title>
+<title>Flujo y transporte conservativo de la especie c_1= Ca^{2+} Incorrecto -&gt;SO_4^{2-}. – RTWMA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -348,7 +348,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_CT_gypsum_1D/01_C1_flow_tran.html">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_CT_gypsum_1D/01_C1_flow_tran.html">Flujo y transporte conservativo de la especie $c_1= Ca^{2+}$ Incorrecto -&gt;$SO_4^{2-}$.</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -381,7 +381,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01_CT_gypsum_1D/01_C1_flow_tran.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</span></a>
+ <span class="menu-text">Flujo y transporte conservativo de la especie $c_1= Ca^{2+}$ Incorrecto -&gt;$SO_4^{2-}$.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -469,7 +469,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= SO_4^{2-}\)</span>.</h1>
+<h1 class="title">Flujo y transporte conservativo de la especie <span class="math inline">\(c_1= Ca^{2+}\)</span> Incorrecto -&gt;<span class="math inline">\(SO_4^{2-}\)</span>.</h1>
 </div>
 
 
@@ -480,7 +480,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026-10-04</p>
+      <p class="date">2026-10-07</p>
     </div>
   </div>
   
@@ -493,7 +493,7 @@ window.Quarto = {
 
 
 <p><strong>Descripción</strong>.</p>
-<p>En esta notebook se plantea el problema de flujo de agua subterránea y transporte conservativo de la especie química <span class="math inline">\(c_1= SO_4^{2-}\)</span> y se resuelve usando MODFLOW 6 (GWF y GWT) en combinación de las herramientas de <strong>FloPy</strong>.</p>
+<p>En esta notebook se plantea el problema de flujo de agua subterránea y transporte conservativo de la especie química <span class="math inline">\(c_1 = Ca^{2+}\)</span> y se resuelve usando MODFLOW 6 (GWF y GWT) en combinación de las herramientas de <strong>FloPy</strong>.</p>
 <p><a href="https://github.com/luiggix/RTWMA">RTWMA</a> © 2024-2026 by <a href="https://www.geofisica.unam.mx">IGF-UNAM</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
 <section id="planteamiento-del-problema." class="level1">
 <h1>Planteamiento del problema.</h1>
@@ -548,19 +548,19 @@ h(x,t_0) = 1.0 \qquad\text{(m)}
 <p>con <span class="math inline">\(D_{xx} = \alpha_L |v_x| + D^{*}\)</span> (<span class="math inline">\(\alpha_L\)</span>: dispersividad longitudinal, <span class="math inline">\(D^{*}\)</span>: difusión molecular efectiva), $v_x = q_x / $ (<span class="math inline">\(v_x\)</span>: velocidad de poro de flujo de agua) y <span class="math inline">\(c_s\)</span> es la concentración volumétrica de soluto en la fuente/sumidero.</p>
 <p><strong>Condiciones de frontera:</strong></p>
 <p><span class="math display">\[
-c_1(x_{_{1}}, t) = 1.000329 \qquad\text{(concentración fija en } x=x_{_{1}})
+q_x c_1 - D_x \frac{\partial c_1}{\partial x}  = q_{x{_{BC}}} c_{1{_{BC}}} \qquad\text{ en } x=0
 \]</span></p>
 <p><span class="math display">\[
-D_x \left.\frac{\partial c_1}{\partial x}\right|_{(L,t)} = 0
-\qquad\text{(flujo dispersivo nulo en la salida } x=L )
+D_x \frac{\partial c_1}{\partial x} = 0
+\qquad\text{ en } x=L
 \]</span></p>
 <p><strong>Condición inicial:</strong></p>
 <p><span class="math display">\[
-c_1(x,t_0) = 1.000329 \quad \forall\, x \neq x_{_{12}}
+c_1(x,t_0) = 1.0000329371 \quad \forall\, x \neq x_{_{12}}
 \]</span> <span class="math display">\[
-c_1(x_{_{12}}, t_0) = 200.0
+c_1(x_{_{12}}, t_0) = 200.000000165
 \]</span></p>
-<p>En el instante inicial la concentración es igual a un valor de <span class="math inline">\(1.000329\)</span> en todo el dominio, excepto en el punto <span class="math inline">\(x_{_{12}}\)</span> donde existe un valor en dicha celda de <span class="math inline">\(200.0\)</span> que representa una masa de soluto ya presente en el medio (p.&nbsp;ej. un derrame o inyección previa) que a partir de <span class="math inline">\(t_0\)</span> comenzará a migrar y dispersarse bajo la acción del flujo.</p>
+<p>En el instante inicial la concentración es igual a un valor de <span class="math inline">\(1.0000329371\)</span> en todo el dominio, excepto en el punto <span class="math inline">\(x_{_{12}}\)</span> donde existe un valor en dicha celda de <span class="math inline">\(200.000000165\)</span> que representa una masa de soluto ya presente en el medio (p.&nbsp;ej. un derrame o inyección previa) que a partir de <span class="math inline">\(t_0\)</span> comenzará a migrar y dispersarse bajo la acción del flujo.</p>
 </section>
 </section>
 <section id="solución-numérica-con-modflow-6." class="level1">
@@ -913,7 +913,7 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <tr class="odd">
 <td style="text-align: right;">Source concentration</td>
 <td style="text-align: center;"><span class="math inline">\(c_s\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1.0000329\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1.0000329371\)</span></td>
 <td style="text-align: center;">unitless</td>
 <td style="text-align: left;"><code>phys["source_concentration"][0]</code></td>
 </tr>
@@ -934,7 +934,7 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <tr class="even">
 <td style="text-align: right;">Initial concentration</td>
 <td style="text-align: center;"><span class="math inline">\(c_1(x, t_0)\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1.0000329\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1.0000329371\)</span></td>
 <td style="text-align: center;">unitless</td>
 <td style="text-align: left;"><code>phys["initial_concentration"]</code></td>
 </tr>
@@ -948,7 +948,7 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <tr class="even">
 <td style="text-align: right;">Concentration boundary condition (type I)</td>
 <td style="text-align: center;"><span class="math inline">\(c_1(x_{_{1}}, t)\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1.0000329\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1.0000329371\)</span></td>
 <td style="text-align: center;">unitless</td>
 <td style="text-align: left;"><code>phys["bc_conc_t1"][0]</code></td>
 </tr>
@@ -972,8 +972,8 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <details class="code-fold">
 <summary>Código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arreglo para la condición inicial</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>c1_ini <span class="op">=</span> np.full((nlay,nrow,ncol), <span class="fl">1.0000329</span>) <span class="co"># En todo el dominio</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>c1_ini[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">11</span>] <span class="op">=</span> <span class="fl">200.0</span>  <span class="co"># Pulso en x_L</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>c1_ini <span class="op">=</span> np.full((nlay,nrow,ncol), <span class="fl">1.0000329371</span>) <span class="co"># En todo el dominio</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>c1_ini[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">11</span>] <span class="op">=</span> <span class="fl">200.000000165</span>  <span class="co"># Pulso en x_L</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>xmf6.nice_print(<span class="st">"Array info: c1"</span>)</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>xmf6.info_array(c1_ini)</span>
@@ -983,10 +983,10 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    bc_head_t1 <span class="op">=</span> [(<span class="st">"CHD-1"</span> , [(<span class="dv">0</span>, <span class="dv">0</span>, dis[<span class="st">'ncol'</span>] <span class="op">-</span> <span class="dv">1</span>), <span class="fl">1.0</span>])],</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    hydraulic_conductivity <span class="op">=</span> <span class="fl">1.0</span>, </span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    specific_discharge <span class="op">=</span> <span class="fl">0.2</span>, </span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    source_concentration <span class="op">=</span> <span class="fl">1.0000329</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    source_concentration <span class="op">=</span> <span class="fl">1.0000329371</span>,</span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    porosity <span class="op">=</span> <span class="fl">0.5</span>,</span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    initial_concentration <span class="op">=</span> c1_ini,</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    bc_conc_t1 <span class="op">=</span> [(<span class="st">"CNC-1"</span>, [(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">1.0000329</span>])],</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    bc_conc_t1 <span class="op">=</span> [(<span class="st">"CNC-1"</span>, [(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">1.0000329371</span>])],</span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    longitudinal_dispersivity <span class="op">=</span> <span class="fl">0.5</span>, <span class="co"># 0.2 o 0.5?</span></span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    dispersion_coefficient <span class="op">=</span> <span class="fl">1.0</span> </span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>)</span>
@@ -1034,25 +1034,27 @@ Physical parameters
 
        specific_discharge = 0.2
 
-     source_concentration = 1.0000329
+     source_concentration = 1.0000329371
 
                  porosity = 0.5
 
     initial_concentration = <span class="ansi-blue-fg">―― data array ――</span>
 
-                          = [[  1.0000329   1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+                          = [[  1.00003294   1.00003294   1.00003294   1.00003294   1.00003294
 
-    1.0000329   1.0000329   1.0000329   1.0000329   1.0000329 200.
+    1.00003294   1.00003294   1.00003294   1.00003294   1.00003294
 
-    1.0000329   1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+    1.00003294 200.00000016   1.00003294   1.00003294   1.00003294
 
-    1.0000329   1.0000329   1.0000329   1.0000329   1.0000329   1.0000329
+    1.00003294   1.00003294   1.00003294   1.00003294   1.00003294
 
-    1.0000329   1.0000329   1.0000329   1.0000329   1.0000329   1.0000329]]
+    1.00003294   1.00003294   1.00003294   1.00003294   1.00003294
+
+    1.00003294   1.00003294   1.00003294   1.00003294   1.00003294]]
 
                bc_conc_t1 = <span class="ansi-blue-fg">―― data array ――</span>
 
-                          = ('CNC-1', [(0, 0, 0), 1.0000329])
+                          = ('CNC-1', [(0, 0, 0), 1.0000329371])
 
 longitudinal_dispersivity = 0.5
 
@@ -1062,7 +1064,7 @@ longitudinal_dispersivity = 0.5
 
                           = ('WEL-1', 'AUX', 'CONCENTRATION')
 
-                          = ((0, 0, 0), 0.2, 1.0000329)
+                          = ((0, 0, 0), 0.2, 1.0000329371)
 
 <span class="ansi-blue-fg">―――――――――――――――――――</span>
 </pre>
@@ -1197,9 +1199,9 @@ longitudinal_dispersivity = 0.5
     writing package npf...
     writing package ic...
     writing package chd-1...
-INFORMATION: maxbound in ('', 'chd', 'dimensions') changed to 1 based on size of stress_period_data
+INFORMATION: maxbound in ('gwf6', 'chd', 'dimensions') changed to 1 based on size of stress_period_data
     writing package wel-1...
-INFORMATION: maxbound in ('', 'wel', 'dimensions') changed to 1 based on size of stress_period_data
+INFORMATION: maxbound in ('gwf6', 'wel', 'dimensions') changed to 1 based on size of stress_period_data
     writing package oc...
 FloPy is using the following executable to run the model: ..\..\..\..\..\..\mf6_tutorial\mf6\windows\mf6.exe
                                    MODFLOW 6
@@ -1226,15 +1228,15 @@ and distribution information.
  
  MODFLOW runs in SEQUENTIAL mode
  
- Run start date and time (yyyy/mm/dd hh:mm:ss): 2026/08/03 16:19:43
+ Run start date and time (yyyy/mm/dd hh:mm:ss): 2026/10/07 14:15:02
  
  Writing simulation list file: mfsim.lst
  Using Simulation name file: mfsim.nam
  
     Solving:  Stress period:     1    Time step:     1
  
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2026/08/03 16:19:43
- Elapsed run time:  0.400 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2026/10/07 14:15:02
+ Elapsed run time:  0.174 Seconds
  
  Normal termination of simulation.</code></pre>
 </div>
@@ -1449,11 +1451,11 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
 <span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregamos el paquete CNC para definir una concentracion fija </span></span>
 <span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a><span class="co"># c1(x1,t) = 1.000329</span></span>
-<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>o_cnc <span class="op">=</span> flopy.mf6.ModflowGwtcnc(</span>
-<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a>    o_gwt,</span>
-<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>    stress_period_data <span class="op">=</span> [phys[<span class="st">"bc_conc_t1"</span>][<span class="dv">0</span>][<span class="dv">1</span>]],</span>
-<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>    pname <span class="op">=</span> phys[<span class="st">"bc_conc_t1"</span>][<span class="dv">0</span>][<span class="dv">0</span>],</span>
-<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a><span class="co">#o_cnc = flopy.mf6.ModflowGwtcnc(</span></span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a><span class="co">#    o_gwt,</span></span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a><span class="co">#    stress_period_data = [phys["bc_conc_t1"][0][1]],</span></span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a><span class="co">#    pname = phys["bc_conc_t1"][0][0],</span></span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a><span class="co">#)</span></span>
 <span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregamos el paquete FMI para enlazar la solución del flujo con la de transporte</span></span>
 <span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>path_flow <span class="op">=</span> os.path.join(os.getcwd(), paths[<span class="st">"flow_ws"</span>], paths[<span class="st">"flow_name"</span>])</span>
@@ -1505,8 +1507,6 @@ perioddata = <span class="ansi-blue-fg">―― data array ――</span>
     writing package adv...
     writing package dsp...
     writing package mst...
-    writing package cnc-1...
-INFORMATION: maxbound in ('', 'cnc', 'dimensions') changed to 1 based on size of stress_period_data
     writing package fmi...
     writing package ssm...
     writing package oc...
@@ -1535,7 +1535,7 @@ and distribution information.
  
  MODFLOW runs in SEQUENTIAL mode
  
- Run start date and time (yyyy/mm/dd hh:mm:ss): 2026/08/03 16:19:44
+ Run start date and time (yyyy/mm/dd hh:mm:ss): 2026/10/07 14:18:56
  
  Writing simulation list file: mfsim.lst
  Using Simulation name file: mfsim.nam
@@ -1581,8 +1581,8 @@ and distribution information.
     Solving:  Stress period:     1    Time step:    39
     Solving:  Stress period:     1    Time step:    40
  
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2026/08/03 16:19:44
- Elapsed run time:  0.381 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2026/10/07 14:18:56
+ Elapsed run time:  0.157 Seconds
  
  Normal termination of simulation.</code></pre>
 </div>
@@ -1641,15 +1641,15 @@ xcoord = <span class="ansi-blue-fg">―― data array ――</span>
 
   conc = <span class="ansi-blue-fg">―― data array ――</span>
 
-       = [ 1.0000329   1.00003396  1.00003809  1.00005133  1.00009079  1.00020291
+       = [ 1.00003385  1.00003512  1.00003956  1.00005314  1.00009297  1.00020541
 
-  1.00050795  1.00130321  1.00328792  1.00802071  1.0187828   1.04206919
+  1.00051069  1.00130612  1.00329087  1.0080236   1.0187855   1.04207161
 
-  1.08990902  1.18302255  1.35435167  1.65173123  2.1375982   2.88316992
+  1.0899111   1.18302427  1.35435302  1.65173226  2.13759895  2.88317044
 
-  3.95516903  5.3954275   7.19728557  9.28622233 11.51349967 13.66912254
+  3.95516939  5.39542774  7.19728573  9.28622244 11.51349975 13.6691226
 
- 15.51374605 16.82169866 17.38350331 17.25893829 16.625356   15.45579979]
+ 15.5137461  16.82169871 17.38350336 17.25893834 16.62535605 15.45579984]
 
 <span class="ansi-blue-fg">――――――――――――――――</span>
 </pre>
